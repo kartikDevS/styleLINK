@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore — StyleLink</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">StyleLink</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="creators.html">Creators</a>
+        <a href="upload.html">Upload</a>
+        <a href="hire.html">Hire</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+  <header class="explore-header">
+    <h1>Explore Creators</h1>
+    <div class="filter-bar">
+      <div class="filter">
+        <label>Height</label>
+        <select id="filter-height">
+          <option value="any">Any</option>
+          <option value="short">Under 165cm</option>
+          <option value="average">165–180cm</option>
+          <option value="tall">180cm+</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label>Weight</label>
+        <select id="filter-weight">
+          <option value="any">Any</option>
+          <option value="light">Under 60kg</option>
+          <option value="medium">60–80kg</option>
+          <option value="heavy">80kg+</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label>Style</label>
+        <select id="filter-style">
+          <option value="any">Any</option>
+          <option value="street">Street</option>
+          <option value="minimal">Minimal</option>
+          <option value="glam">Glam</option>
+        </select>
+      </div>
+      <button id="clear-filters" class="btn small">Clear</button>
+    </div>
+  </header>
+
+  <section class="cards" id="creator-cards">
+   
+    <article class="card" data-height="average" data-weight="medium" data-style="street">
+      <img src="assets/placeholder-1.jpg" alt="Creator 1">
+      <div class="card-body">
+        <h3>Alex Rivera</h3>
+        <p class="muted">Style: Street</p>
+        <p class="meta">175cm • 72kg</p>
+        <a class="btn small" href="profile.html">View Profile</a>
+      </div>
+    </article>
+
+    <article class="card" data-height="tall" data-weight="heavy" data-style="glam">
+      <img src="assets/placeholder-2.jpg" alt="Creator 2">
+      <div class="card-body">
+        <h3>Marina Cole</h3>
+        <p class="muted">Style: Glam</p>
+        <p class="meta">182cm • 82kg</p>
+        <a class="btn small" href="profile.html">View Profile</a>
+      </div>
+    </article>
+
+    <article class="card" data-height="short" data-weight="light" data-style="minimal">
+      <img src="assets/placeholder-3.jpg" alt="Creator 3">
+      <div class="card-body">
+        <h3>Samir Patel</h3>
+        <p class="muted">Style: Minimal</p>
+        <p class="meta">162cm • 58kg</p>
+        <a class="btn small" href="profile.html">View Profile</a>
+      </div>
+    </article>
+
+    <article class="card" data-height="average" data-weight="light" data-style="street">
+      <img src="assets/placeholder-4.png" alt="Creator 4">
+      <div class="card-body">
+        <h3>Jade Kim</h3>
+        <p class="muted">Style: Street</p>
+        <p class="meta">170cm • 60kg</p>
+        <a class="btn small" href="profile.html">View Profile</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 StyleLink — Crafted for creators.</p>
+      <nav class="foot-links">
+        <a href="creators.html">Creators</a>
+        <a href="explore.html">Explore</a>
+        <a href="upload.html">Upload</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
